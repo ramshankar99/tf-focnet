@@ -21,3 +21,5 @@ def test_focnet_change():
     after = [v.numpy() for v in model.trainable_variables]
     for b, a in zip(before, after):
         assert np.any(np.not_equal(b, a))
+
+test_focnet()
